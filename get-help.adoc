@@ -1,0 +1,16 @@
+---
+sidebar: sidebar 
+permalink: get-help.html 
+keywords: get help, get support, knowledgebase, slack, phone, web, ticket, contact support, support ticket 
+summary: NetApp ofrece compatibilidad con Trident de distintas formas. Hay disponibles amplias opciones de autosoporte gratuitas las 24 horas del día, los 7 días de la semana, como un canal de Slack. 
+---
+= Soporte técnico
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+Astra Trident es un proyecto de NetApp con soporte oficial. Puede ponerse en contacto con NetApp mediante cualquiera de los mecanismos estándar y obtener el soporte de nivel empresarial que necesita.
+
+También hay una vibrante comunidad pública de usuarios de contenedores (incluidos los desarrolladores de Astra Trident) en el `containers` canal activado http://netapp.io/slack["El trabajo en Slack de NetApp"^]. Este es un gran lugar para hacer preguntas generales sobre el proyecto y discutir temas relacionados con compañeros de ideas afines.

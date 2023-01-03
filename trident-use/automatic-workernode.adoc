@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: trident-use/automatic-workernode.html 
+keywords: beta feature, trident, automatic worker node, worker node prep, preparation, NFS, iSCSI 
+summary: Astra Trident puede instalar automáticamente las herramientas iSCSI y NFS necesarias en los nodos presentes en el clúster de Kubernetes. 
+---
+= Preparación automática del nodo de trabajo
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+Astra Trident puede instalar automáticamente el necesario `NFS` y.. `iSCSI` Herramientas en los nodos presentes en el clúster de Kubernetes. Se trata de una *función beta* y *no está pensada para* clusters de producción. Hoy en día, la función está disponible para nodos que ejecutan *CentOS, RHEL y Ubuntu*.
+
+Para esta función, Astra Trident incluye una nueva Marca de instalación: `--enable-node-prep` para las instalaciones implementadas con `tridentctl`. Para implementaciones con el operador Trident, use la opción Boolean `enableNodePrep`.
+
+
+WARNING: La `--enable-node-prep` La opción de instalación le indica a Astra Trident que instale y asegúrese de que los paquetes y/o servicios NFS e iSCSI se estén ejecutando cuando un volumen está montado en un nodo de trabajo. Se trata de una *característica beta* pensada para ser utilizada en entornos de prueba/desarrollo que *no está calificada* para su uso en producción.
+
+Cuando la `--enable-node-prep` Flag se incluye en las instalaciones de Astra Trident implementadas con `tridentctl`, esto es lo que sucede:
+
+. Como parte de la instalación, Astra Trident registra los nodos en los que se ejecuta.
+. Cuando se realiza una solicitud de reclamación de volumen persistente (PVC), Astra Trident crea un VP a partir de uno de los back-ends que gestiona.
+. Para usar la RVP en un pod, es necesario que Astra Trident monte el volumen en el nodo en el que se ejecuta el pod. Astra Trident intenta instalar las utilidades de cliente NFS/iSCSI necesarias y garantizar que los servicios necesarios están activos. Esto se realiza antes de montar el volumen.
+
+
+La preparación de un nodo de trabajo sólo se realiza una vez como parte del primer intento de montaje de un volumen. Todos los montajes de volumen subsiguientes deben tener éxito siempre que no se produzcan cambios fuera de Astra Trident touch el `NFS` y.. `iSCSI` servicios públicos.
+
+De este modo, Astra Trident puede garantizar que todos los nodos de un clúster de Kubernetes tengan las utilidades necesarias para montar y conectar volúmenes. En el caso de los volúmenes NFS, la política de exportación también debe permitir el montaje del volumen. Trident puede gestionar automáticamente políticas de exportación por back-end; como alternativa, los usuarios pueden gestionar políticas de exportación fuera de banda.
