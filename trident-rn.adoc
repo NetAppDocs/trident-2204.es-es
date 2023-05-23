@@ -29,13 +29,13 @@ IMPORTANT: Si actualiza desde cualquier versión de Trident anterior y utiliza A
 
 === Soluciones
 
-* Análisis mejorado de nombres de iniciadores iSCSI. (Número [#681](https://github.com/NetApp/trident/issues/681))[]
-* Se ha solucionado un problema en el que no se permitían los parámetros de clase de almacenamiento CSI. (Número [#598](https://github.com/NetApp/trident/issues/598))[]
-* Se ha corregido la declaración de clave duplicada en Trident CRD. (Número [#671](https://github.com/NetApp/trident/issues/671))[]
-* Se han corregido registros de instantánea CSI imprecisos. (Número [#629](https://github.com/NetApp/trident/issues/629))[]
-* Se ha solucionado el problema con la anulación de la publicación de volúmenes en nodos eliminados. (Número [#691](https://github.com/NetApp/trident/issues/691))[]
-* Se ha añadido el tratamiento de incoherencias del sistema de archivos en dispositivos de bloque. (Número [#656](https://github.com/NetApp/trident/issues/656))[]
-* Se ha solucionado el problema al extraer imágenes de soporte automático al configurar el `imageRegistry` indicador durante la instalación. (Número [#715](https://github.com/NetApp/trident/issues/715))[]
+* Análisis mejorado de nombres de iniciadores iSCSI. (Número [#681]
+* Se ha solucionado un problema en el que no se permitían los parámetros de clase de almacenamiento CSI. (Número [#598]
+* Se ha corregido la declaración de clave duplicada en Trident CRD. (Número [#671]
+* Se han corregido registros de instantánea CSI imprecisos. (Número [#629]
+* Se ha solucionado el problema con la anulación de la publicación de volúmenes en nodos eliminados. (Número [#691]
+* Se ha añadido el tratamiento de incoherencias del sistema de archivos en dispositivos de bloque. (Número [#656]
+* Se ha solucionado el problema al extraer imágenes de soporte automático al configurar el `imageRegistry` indicador durante la instalación. (Número [#715]
 * Se ha solucionado el problema en el que el controlador ANF no pudo clonar un volumen con varias reglas de exportación.
 
 
@@ -43,10 +43,10 @@ IMPORTANT: Si actualiza desde cualquier versión de Trident anterior y utiliza A
 
 === Mejoras
 
-* Las conexiones entrantes con los extremos seguros de Trident ahora requieren un mínimo de TLS 1.3. (Número [#698](https://github.com/NetApp/trident/issues/698))[]
+* Las conexiones entrantes con los extremos seguros de Trident ahora requieren un mínimo de TLS 1.3. (Número [#698]
 * Trident ahora añade encabezados HSTS a las respuestas desde sus extremos seguros.
 * Trident ahora intenta habilitar automáticamente la función de permisos de unix de Azure NetApp Files.
-* *Kubernetes*: El demonset de Trident ahora se ejecuta en la clase prioritaria del nodo-sistema. (Número [#694](https://github.com/NetApp/trident/issues/694))[]
+* *Kubernetes*: El demonset de Trident ahora se ejecuta en la clase prioritaria del nodo-sistema. (Número [#694]
 
 
 
