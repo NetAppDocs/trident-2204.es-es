@@ -14,7 +14,7 @@ summary: Puede poner en marcha Astra Trident con el operador de Trident. Es posi
 Puede poner en marcha Astra Trident con el operador de Trident. El operador de Trident se puede poner en marcha de dos maneras:
 
 * Usar Trident link:https://artifacthub.io/packages/helm/netapp-trident/trident-operator["Carta del timón"^]: El gráfico Helm despliega el operador Trident e instala Trident en un solo paso.
-* Manualmente: Trident proporciona un link:https://github.com/NetApp/trident/blob/master/deploy/bundle.yaml["aylma"^] archivo que se puede utilizar para instalar el operador y crear objetos asociados.
+* Manualmente: Trident proporciona un link:https://github.com/NetApp/trident/blob/stable/v22.04/deploy/bundle.yaml["aylma"^] archivo que se puede utilizar para instalar el operador y crear objetos asociados.
 
 
 
