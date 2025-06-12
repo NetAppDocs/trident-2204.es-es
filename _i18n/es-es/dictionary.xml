@@ -2622,7 +2622,6 @@
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">Puede encontrar una lista actual de las patentes propiedad de NetApp en:</block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">Política de privacidad</block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">Código abierto</block>
-  <block id="0172b29a9f5d94dc62ee592a98183f3b" category="paragraph">Puede revisar las licencias y los derechos de autor de terceros que se utilizan en el software de NetApp para Astra Trident en el archivo de avisos de cada versión en<block ref="4a3c8c5a408c6db1c44c04391a8a0a2f" category="inline-link-rx"></block>.</block>
   <block id="d59b86d1714966230da7a00672e40912" category="summary">Utilice las recomendaciones que se enumeran aquí para asegurarse de que su instalación de Astra Trident es segura.</block>
   <block id="2fae32629d4ef4fc6341f1751b405e45" category="doc">Seguridad</block>
   <block id="44a736677691eaca5e5d3d6b5c770b22" category="section-title">Ejecute Astra Trident en su propio espacio de nombres</block>
@@ -3110,4 +3109,6 @@ Para obtener más información, consulte <block ref="04cf7258a315ca08f4b436c194f
   <block id="d59c00abbeaf33a9a094b3a69c563405" category="sidebar">NetApp.io</block>
   <block id="8f5cc6430613f1c12f36965050bb7197" category="sidebar">Discordia</block>
   <block id="9aba1139ac0174f6067d723ab428d43a" category="sidebar">Información vital de Kubernetes 1.24</block>
+  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">Los archivos de notificación proporcionan información sobre los derechos de autor y las licencias de terceros que se utilizan en software de NetApp.</block>
+  <block id="b2c5fe74ce5fe4b418e2c888873cdad2" category="paragraph"><block ref="6cd62921a12aa45126e024256eb76da4" category="inline-link-rx"></block>.</block>
 </blocks>
